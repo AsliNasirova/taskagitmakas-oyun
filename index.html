@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  
+                   initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="game">
+        <!--Basliq -->
+        <div class="common">
+            <div class="title"><i class="fa-solid fa-hand-fist"></i>Rock-Paper-Scissor<i class="fa-solid fa-hand-fist"></i></div>
+
+            <!--Oyunçu və kompüterin hesabını göstərin -->
+            <div class="score">
+                <div class="playerScore">
+                    <h2>Player</h2>
+                    <p class="p-count count">0</p>
+
+                </div>
+                <div class="computerScore">
+                    <h2>Computer</h2>
+                    <p class="c-count count">0</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="move">Choose your move</div>
+
+            <!--Oyunun bitməsinə qədər qalan hərəkətlərin sayı -->
+            <div class="movesleft">Moves Left: 10 </div>
+
+            <!--oyunçu üçün oyun oynamaq üçün mövcud seçimlər-->
+            <div class="options">
+                <button class="rock"><i class="fa-solid fa-bomb"></i> Rock </button>
+                <button class="paper"><i class="fa-regular fa-paste"></i>Paper</button>
+                <button class="scissor"><i class="fa-solid fa-hand-scissors"></i>Scissors</button>
+            </div>
+        </div>
+        <!--oyunun final neticesi -->
+        <div class="result"></div>
+
+        <!--Oyunu yenidən yükləyin -->
+        <button class="reload"></button>
+
+    </section>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background: #005aa7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fffde4,
+    #005aa7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fffde4,
+    #005aa7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: rgb(75, 94, 32);
+}
+/* iconlarim */
+.fa-solid,
+.fas {
+  color: black;
+  font-size: 50px;
+}
+.fa-regular,
+.far {
+  color: black;
+  font-size: 50px;
+}
+
+/* Oyunda hər şeyi mərkəzləşdirmək */
+.game {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+/* oyunun basligi */
+.title {
+  top: 0;
+  font-size: 4rem;
+  z-index: 2;
+}
+
+/* xal lovhesi*/
+.score {
+  display: flex;
+  justify-content: space-evenly;
+  top: 70px;
+  z-index: 1;
+}
+
+/* xal  */
+.p-count,
+.c-count {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* bir sətirdə üç düyməni göstərir */
+.options {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+/* Hər üç düymədə üslub */
+.rock,
+.paper,
+.scissor {
+  padding: 0.8rem;
+  width: 197px;
+  border-radius: 10px;
+  background: rgb(74, 137, 156);
+  outline: none;
+  border-color: pink;
+  border: none;
+  cursor: pointer;
+}
+.common {
+  top: 74px;
+  position: absolute;
+  border: 4px solid gray;
+}
+.container {
+  border: 4px solid rgb(13, 44, 13);
+}
+.move {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Düymə üslubunu yenidən yükləyin */
+.reload {
+  display: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: green;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Responsivliyin dizayni */
+@media screen and (max-width: 612px) {
+  .title {
+    text-align: center;
+  }
+  .score {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
+}
